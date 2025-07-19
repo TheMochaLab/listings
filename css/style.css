@@ -135,6 +135,8 @@
     padding: 1.5rem 1rem 2rem;
     max-width: 1000px;
     margin: 0 auto;
+    max-width: 1200px;
+    gap: 2rem
   }
 
   .card {
