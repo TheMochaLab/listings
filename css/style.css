@@ -130,13 +130,12 @@
   /* Grid Section */
   .grid {
     display: grid;
-    gap: 1.25rem;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding: 1.5rem 1rem 2rem;
-    max-width: 1000px;
     margin: 0 auto;
     max-width: 1200px;
-    gap: 2rem
+    min-width: 320px;
   }
 
   .card {
@@ -145,7 +144,6 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: box-shadow 0.3s ease;
   }
   
   .card img {
@@ -169,7 +167,7 @@
   }
 
   .card-content h2 {
-    height: 4rem;
+    height: 6rem;
     color: #a99f7f;
     font-weight: 600;
     margin: 0 0 0.3rem;
@@ -188,9 +186,7 @@
   }
 
   .card-content .description {
-    min-height: 5.5rem;          
-    overflow: hidden;      
-    text-overflow: ellipsis; /* Optional: add "..." if cut off */
+    min-height: 5rem;
   }
 
   /* Contact Button */
@@ -229,7 +225,7 @@
   }
 
   /* Responsive */
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     .featured-content {
       flex-direction: column;
       text-align: center;
@@ -254,4 +250,4 @@
       bottom: 0.75rem;
       right: 0.75rem;
     }
-  }
+  } */
