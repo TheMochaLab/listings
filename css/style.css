@@ -63,14 +63,13 @@
   .featured-text {
     flex: 1 1 300px;
     text-align: left;
-    color: #f805c3;
   }
 
   .featured-text h2 {
     font-size: 1.75rem;
     margin: 0 0 0.25rem;
     font-weight: 600;
-    color: #e91e63;
+    color: #d23f8d;
     letter-spacing: 0.08em;
   }
   
@@ -222,31 +221,3 @@
     margin-top: 3rem;
     border-top: 1px solid #222;
   }
-
-  /* Responsive */
-  /* @media (max-width: 480px) {
-    .featured-content {
-      flex-direction: column;
-      text-align: center;
-    }
-    .featured-text {
-      color: #e91e63;
-    }
-    .featured-image img {
-      width: 100% !important;
-      max-height: 220px;
-    }
-    .card img {
-      height: 140px;
-    }
-    .button {
-      padding: 0.35rem 1rem;
-      font-size: 0.85rem;
-    }
-    .contact-button {
-      padding: 0.5rem 1rem;
-      font-size: 0.85rem;
-      bottom: 0.75rem;
-      right: 0.75rem;
-    }
-  } */
