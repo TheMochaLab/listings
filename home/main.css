@@ -1,0 +1,200 @@
+:root {
+  /* Default palette: Lavender */
+  --bg-color: #f5f3fa;       /* very light lavender */
+  --text-color: #3b3056;     /* dark muted purple */
+  --accent-color: #9b7fd1;   /* medium lavender purple */
+  --accent-muted: #d6cbf9;   /* soft pastel lavender */
+  --text-muted: #7a719d;     /* muted grey-purple */
+  --power-text: #9b7fd1;
+}
+
+/* Rose Quartz Palette */
+.palette-rose {
+  --bg-color: #fff0f5;
+  --text-color: #5a2a3a;
+  --accent-color: #d87cae;
+  --accent-muted: #f3c5d5;
+  --text-muted: #8a6b7a;
+}
+
+.palette-teal {
+  --bg-color: #f5f3fa;          /* Very light lavender background */
+  --text-color: #2f3b42;        /* Deep teal-gray (replaces dark purple for more contrast) */
+  --accent-color: #4cb8b3;      /* Teal (used for buttons, highlights, etc.) */
+  --accent-muted: #c7f0ed;      /* Soft pastel teal (used for borders and subtle areas) */
+  --text-muted: #6a7580;        /* Muted gray-teal for subtle text */
+  --power-text: #8b6ed9;        /* Lavender highlight, secondary accent (keeps brand flavor) */
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0; 
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 3rem auto 6rem;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;              /* Use bold weight from first */
+  font-size: 5rem;               /* Larger size from first */
+  color: var(--accent-color);
+  letter-spacing: 0.05em;
+  margin: 0 0 0.5rem 0;          /* Bottom margin from second */
+  text-shadow: 0 1px 2px rgba(155, 127, 209, 0.3);
+}
+
+header p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  margin-top: 0;
+}
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+  padding: 0 0.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-muted);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* List styles */
+.services ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text-muted);
+}
+
+.services ul li {
+  padding-left: 1.3rem;
+  position: relative;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+}
+
+.services ul li::before {
+  content: '✓'; /* Unicode check mark */
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1;
+  top: 0.1em;
+}
+
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.button {
+  background-color: var(--accent-color);
+  color: #fff9f5;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+  letter-spacing: 0.06em;
+  box-shadow:
+    0 2px 8px rgba(155, 127, 209, 0.25),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.15);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color); /* Teal highlight */
+  box-shadow:
+    0 6px 18px rgba(76, 184, 179, 0.75), /* Match --accent-color */
+    inset 0 -2px 8px rgba(255, 255, 255, 0.25);
+  outline: none;
+  transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--accent-muted);
+  margin-top: 6rem;
+  letter-spacing: 0.03em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .top-right-tagline {
+    padding-right: 1rem;
+    font-size: 0.8rem;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  .button {
+    padding: 0.85rem 2.5rem;
+    font-size: 1rem;
+  }
+  .container {
+    margin: 2rem 1rem 4rem;
+  }
+  section {
+    padding: 0 0.25rem;
+  }
+}
